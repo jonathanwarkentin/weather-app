@@ -2,6 +2,10 @@ var weather;
 var weatherParse;
 var temp = document.getElementById("temperature");
 var tempData;
+var mainDesc = document.getElementById("weather-description");
+var weatherIcon = document.getElementById("weather-icon");
+var windSpeed = document.getElementById("wind-speed");
+
 function loadWeather() {
   let xhr = new XMLHttpRequest();
   xhr.open(
@@ -24,4 +28,8 @@ function loadWeather() {
 
 function displayWeather() {
   temp.innerHTML = Math.round(weatherParse.main.temp) + "°F";
+  mainDesc.innerHTML = weatherParse.weather[0].main;
+  weatherIcon.src =
+    "http://openweathermap.org/img/w/" + weatherParse.weather[0].icon + ".png";
+  windSpeed.innerHTML = "Wind Speed: " + weatherParse.wind.speed + "MPH";
 }
