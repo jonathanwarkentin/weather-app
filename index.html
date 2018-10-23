@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Weather in Chicago</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <h1 id="main-title">Weather<br>in<br>Chicago</h1>
-      <div id="weather-display">
-        <h1 id="temperature">45°</h1>
-        <h3 id="chance-of-precipitation">Chance of <br> Precipitation: 10%</h3>
-        <img src="img/sunny-clipart.jpg" alt="Sunny Image" id="weather-image">
-        <h2 id="weather-description">Sunny</h2>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Weather in Chicago</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload='loadWeather()'>
+  <div class="container">
+    <h1 id="main-title">Weather<br>in<br>Chicago</h1>
+    <div id="weather-display">
+      <h2 id="temperature"></h2>
+      <h3 id="chance-of-precipitation">Chance of <br> Precipitation: 10%</h3>
+      <img src="img/sunny-clipart.jpg" alt="Sunny Image" id="weather-image">
+      <h2 id="weather-description">Sunny</h2>
     </div>
-  </body>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
