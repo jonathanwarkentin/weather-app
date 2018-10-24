@@ -12,3 +12,7 @@ TO-DO
     compares to that of the past - essentially a not-so-scientific visual
     representation of the extent to which climate change has affected the
     given location
+
+DONE
+Basic Markup and Styling
+JS to call OpenWeatherMap API using AJAX XHR and parse the JSON to display current weather data
