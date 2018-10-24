@@ -14,5 +14,6 @@ TO-DO
     given location
 
 DONE
-Basic Markup and Styling
-JS to call OpenWeatherMap API using AJAX XHR and parse the JSON to display current weather data
+1) Basic Markup and Styling
+2) JS to call OpenWeatherMap API using AJAX XHR and 
+    parse the JSON to display current weather data
