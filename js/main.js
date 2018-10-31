@@ -5,14 +5,16 @@ var tempData;
 var mainDesc = document.getElementById("weather-description");
 var weatherIcon = document.getElementById("weather-icon");
 var windSpeed = document.getElementById("wind-speed");
+var apiStart = "http://api.openweathermap.org/data/2.5/weather?q=";
+var apiFinish = "&units=imperial&appid=170f577e5c8e268b1ea9030a582c19d5";
 
-function loadWeather() {
+//Listen for form Submit
+document.getElementById("myForm").addEventListener("submit", loadWeather);
+var locationInput = document.getElementById("location-input");
+
+function loadWeather(e) {
   let xhr = new XMLHttpRequest();
-  xhr.open(
-    "GET",
-    "http://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=170f577e5c8e268b1ea9030a582c19d5",
-    true
-  );
+  xhr.open("GET", apiStart + locationInput.value + apiFinish, true);
 
   xhr.onload = function() {
     if (this.status == 200) {
@@ -24,6 +26,8 @@ function loadWeather() {
   };
 
   xhr.send();
+  document.getElementById("myForm").reset();
+  e.preventDefault();
 }
 
 function displayWeather() {

@@ -5,6 +5,14 @@
 h1 {
   font-weight: 700;
 }
+
+#location-input {
+  width: 100%;
+}
+
+#city {
+  font-size: 4rem;
+}
 #weather-icon {
   width: 100%;
   height: auto;
