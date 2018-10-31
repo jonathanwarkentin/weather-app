@@ -10,6 +10,14 @@ h1 {
   width: 100%;
 }
 
+#no-weather {
+  display: none;
+  font-size: 3.75rem;
+}
+#no-weather-wrap {
+  display: none;
+}
+
 #city {
   font-size: 4rem;
 }
@@ -22,4 +30,8 @@ h1 {
 }
 #weather-description {
   font-size: 4rem;
+}
+#wind-speed {
+  overflow: hidden;
+  white-space: nowrap;
 }

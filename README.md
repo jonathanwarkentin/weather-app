@@ -1,6 +1,6 @@
 # weather-app
 
-An app that displays the current weather in Chicago.
+An app that displays the current weather in a given city.
 Mainly for experimenting with calling an external API, while continuing to practice formatting.
 I will add features as I continue to learn JS and other technologies.
 

@@ -9,10 +9,9 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="">
+<body onload="initiateWeatherDisplay()">
   <div class="vertical-center">
     <div class="container">
-
       <div class="d-flex flex-row justify-content-between align-items-center">
         <div class="p-2 card-title rounded ">
           <h1 class="display-1" id="main-title">GetWeather</h1>
@@ -23,11 +22,14 @@
           </form>
         </div>
 
-        <div class="p-2 card-title rounded bg-light" id="weather-display-wrapper">
+        <div class="p-2 card-title rounded" id="weather-display-wrapper">
+          <div class="vh-center" id="no-weather-wrap">
+            <h1 id="no-weather">No weather to display...</h1>
+          </div>
           <div class="float-right" id="weather-display">
             <div class="row">
               <div class="col horizontal-center">
-                <h2 id="city">Chicago</h2>
+                <h2 id="city"></h2>
               </div>
             </div>
             <div class="row">
