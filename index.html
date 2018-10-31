@@ -3,21 +3,45 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
   <title>Weather in Chicago</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body onload='loadWeather()'>
-  <div class="container">
-    <h1 id="main-title">Weather<br>in<br>Chicago</h1>
-    <div id="weather-display">
-      <h2 id="temperature"></h2>
-      <h3 id="wind-speed"></h3>
-      <img src="" alt="Weather Icon" id="weather-icon">
-      <h2 id="weather-description"></h2>
+<body class="" onload='loadWeather()'>
+  <div class="vertical-center">
+    <div class="container">
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <div class="p-2 card-title rounded ">
+          <h1 class="display-1" id="main-title">GetWeather</h1>
+        </div>
+        <div class="p-2 card-title rounded bg-light" id="weather-display-wrapper">
+          <div class="float-right" id="weather-display">
+            <div class="row">
+              <div class="col vh-center">
+                <img src="" alt="Weather Icon" id="weather-icon">
+              </div>
+              <div class="col vh-center">
+                <h2 id="temperature"></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col vh-center">
+                <h2 id="weather-description"></h2>
+              </div>
+              <div class="col vh-center text-center">
+                <h2 id="wind-speed"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 </body>
 
